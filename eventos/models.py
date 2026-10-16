@@ -74,8 +74,8 @@ class Inscricao(models.Model):
             return f"{self.nome}"
         
     class Meta:
-        verbose_name = "Inscricao"
-        verbose_name_plural = "Inscricaos"
+        verbose_name = "Inscrição"
+        verbose_name_plural = "Inscrições"
 
 
 class Relatorio(models.Model):
@@ -87,5 +87,5 @@ class Relatorio(models.Model):
         return f"{self.presentes}"
     
     class Meta:
-        verbose_name = "Relatorio"
-        verbose_name_plural = "Relatorios"
+        verbose_name = "Relatório"
+        verbose_name_plural = "Relatórios"
