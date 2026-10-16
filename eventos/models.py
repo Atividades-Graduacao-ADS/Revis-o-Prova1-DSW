@@ -46,7 +46,7 @@ class Evento(models.Model):
     
     @property
     def vagas_restantes(self):
-        return self.local.capacidade - self.inscricao.count()
+        return self.local.capacidade - self.inscricoes.count()
 
 
 class Atividade(models.Model):
