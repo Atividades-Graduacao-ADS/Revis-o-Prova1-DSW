@@ -34,7 +34,7 @@ class Evento(models.Model):
     fim = models.DateTimeField()
     criado_em = models.DateTimeField(auto_now_add=True)
     local = models.ForeignKey(Local, on_delete=models.PROTECT, related_name='eventos')
-    categorias = models.ManyToManyField(Categoria, null=True, blank=True, related_name='evento')
+    categorias = models.ManyToManyField(Categoria, blank=True, related_name='eventos')
     
     def __str__(self):
             return f"{self.titulo}"
